@@ -1,52 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".userdashboard">
+    tools:context=".userdashboard"
+    android:id="@+id/drawer1">
+
+
 
     <androidx.cardview.widget.CardView
-        android:layout_width="440dp"
-        android:layout_height="700dp"
+        android:layout_width="483dp"
+        android:layout_height="649dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="406dp"
+            android:layout_height="648dp"
             android:background="#D8D8D8">
 
             <Button
                 android:id="@+id/button8"
-                android:layout_width="271dp"
-                android:layout_height="189dp"
-                android:background="#262639"
+                android:layout_width="167dp"
+                android:layout_height="144dp"
 
+                android:layout_marginBottom="28dp"
+                android:background="#262639"
                 android:clickable="true"
+                android:enabled="false"
                 android:text="Rent New"
+
                 android:textAllCaps="false"
                 android:textSize="20sp"
-
                 android:textStyle="bold"
                 app:backgroundTint="#262639"
-                app:icon="@drawable/addbttn1"
+                app:icon="@drawable/add1"
                 app:iconGravity="textTop"
                 app:iconPadding="0dp"
                 app:iconSize="100dp"
                 app:iconTint="#FFFFFF"
                 app:iconTintMode="multiply"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/button9"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.471"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.098" />
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="267dp"
                 android:layout_height="105dp"
+                android:layout_marginBottom="152dp"
                 android:clickable="true"
                 android:text="Rent History"
                 app:backgroundTint="#262639"
@@ -54,10 +59,8 @@
                 app:iconGravity="textEnd"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.522"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.624" />
+                app:layout_constraintHorizontal_bias="0.474"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -89,26 +92,25 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.915" />
 
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="552dp"
+                android:layout_height="258dp"
+                tools:layout_editor_absoluteX="-73dp"
+                tools:layout_editor_absoluteY="-102dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-
+        
     </androidx.cardview.widget.CardView>
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier2"
+    <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/my_menu1">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="436dp"
-        android:layout_height="229dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
