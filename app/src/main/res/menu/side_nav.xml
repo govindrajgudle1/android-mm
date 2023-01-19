@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="profile"
+        android:id="@+id/prof"
+        android:icon="@drawable/profile"/>
+    <item android:title="dashboard"
+        android:id="@+id/dash"
+        android:icon="@drawable/daash">
+
+    </item>
+
+    <group>
+        <item android:title="Rentnow"
+            android:id="@+id/rentn"
+            android:icon="@drawable/renthistory"/>
+        <item android:title="Renthistory"
+            android:id="@+id/renthist"
+            android:icon="@drawable/renthistory"/>
+    </group>
+</menu>

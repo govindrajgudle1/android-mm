@@ -3,4 +3,6 @@
 
     <string name="nav_open">Opennn</string>
     <string name="nav_close">Closee</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
