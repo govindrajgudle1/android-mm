@@ -31,11 +31,6 @@
         <activity
             android:name=".userdashboard"
             android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"
@@ -64,21 +59,21 @@
         </activity>
         <activity
             android:name=".Login"
-            android:exported="false">
+            android:exported="false"/>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
+
         <activity
-            android:name=".MainActivity2"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityn"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

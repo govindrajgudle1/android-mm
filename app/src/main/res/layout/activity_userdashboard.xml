@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".userdashboard"
-    android:id="@+id/drawer1">
-
+    tools:context=".userdashboard">
 
 
     <androidx.cardview.widget.CardView
@@ -22,45 +20,19 @@
             android:background="#D8D8D8">
 
             <Button
-                android:id="@+id/button8"
-                android:layout_width="167dp"
-                android:layout_height="144dp"
-
-                android:layout_marginBottom="28dp"
-                android:background="#262639"
-                android:clickable="true"
-                android:enabled="false"
-                android:text="Rent New"
-
-                android:textAllCaps="false"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:backgroundTint="#262639"
-                app:icon="@drawable/add1"
-                app:iconGravity="textTop"
-                app:iconPadding="0dp"
-                app:iconSize="100dp"
-                app:iconTint="#FFFFFF"
-                app:iconTintMode="multiply"
-                app:layout_constraintBottom_toTopOf="@+id/button9"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <Button
                 android:id="@+id/button9"
-                android:layout_width="267dp"
-                android:layout_height="105dp"
-                android:layout_marginBottom="152dp"
+                android:layout_width="211dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="8dp"
                 android:clickable="true"
+                android:enabled="true"
                 android:text="Rent History"
                 app:backgroundTint="#262639"
                 app:icon="@drawable/time"
                 app:iconGravity="textEnd"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.474"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintEnd_toEndOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/jcbimage" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -80,7 +52,7 @@
             <EditText
                 android:id="@+id/editTextTextPersonName3"
                 android:layout_width="263dp"
-                android:layout_height="37dp"
+                android:layout_height="48dp"
                 android:background="#D8D8D8"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -93,17 +65,45 @@
                 app:layout_constraintVertical_bias="0.915" />
 
             <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="552dp"
-                android:layout_height="258dp"
-                tools:layout_editor_absoluteX="-73dp"
-                tools:layout_editor_absoluteY="-102dp"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                android:id="@+id/jcbimage"
+                android:layout_width="364dp"
+                android:layout_height="215dp"
+                android:layout_marginBottom="13dp"
+                android:contentDescription="this a machine "
+                app:layout_constraintBottom_toTopOf="@+id/textView68"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/img" />
+
+            <Button
+                android:id="@+id/addnrew"
+                android:layout_width="158dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="48dp"
+                android:clickable="true"
+                android:text="add rent"
+                app:icon="@drawable/add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="449dp"
+                android:text="USERDASH BOARD"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jcbimage" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-        
+
     </androidx.cardview.widget.CardView>
+
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
